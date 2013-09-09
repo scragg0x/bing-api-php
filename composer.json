@@ -1,0 +1,23 @@
+{
+    "name": "scragg0x/bing-api-php",
+    "type": "library",
+    "description": "Bing API wrapper in php",
+    "keywords": ["bing"],
+    "homepage": "https://github.com/scragg0x/bing-api-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthew Scragg",
+            "email": "scragg@gmail.com",
+            "homepage": "http://fleckz.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Bing": "src/"
+        }
+    }
+}
