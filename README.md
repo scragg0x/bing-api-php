@@ -11,7 +11,7 @@ run the `php composer.phar install` command to install it:
 
     {
         "require": {
-            "scragg0x/votesmart-php": "dev-master"
+            "scragg0x/bing-api-php": "dev-master"
         }
     }
 
