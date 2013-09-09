@@ -14,7 +14,7 @@ class Client
         $data = array(
             'http' => array(
                 'request_fulluri' => true,
-                'ignore_errors' => false,
+                'ignore_errors' => true,
                 'header' => "Authorization: Basic $auth"
             )
         );
