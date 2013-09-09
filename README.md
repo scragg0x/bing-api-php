@@ -1,7 +1,7 @@
 bing-api-php
 ============
 
-Simple bing api wrapper in php.
+Very simple bing api wrapper in php.
 
 ## Install
 
