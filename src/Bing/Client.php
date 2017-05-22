@@ -26,12 +26,17 @@ class Client
 
     public function get($endpoint, $params = array())
     {
-        $qs = "?\$format={$this->output}";
-        if ($params['Query']) {
-            $params['Query'] = "'{$params['Query']}'";
-        }
-        $qs .= ($params) ? '&'.http_build_query($params) : '';
+        try {
+            $qs = "?\$format={$this->output}";
+            if ($params['Query']) {
+                $params['Query'] = "'{$params['Query']}'";
+            }
+            $qs .= ($params) ? '&'.http_build_query($params) : '';
 
-        return file_get_contents($this->base_uri.'/'.$endpoint.$qs, 0, $this->context);
+            return file_get_contents($this->base_uri.'/'.$endpoint.$qs, 0, $this->context);
+        } catch(Exception $e) {
+            echo $e->getMessage();
+            exit;
+        }
     }
 }
